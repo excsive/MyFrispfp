@@ -24,4 +24,4 @@ console.log(service2)
 let servicePrice2 = prompt('Сколько это будет стоить?')
 console.log(servicePrice2)
 
-let fullprice = console.log(screenPrice + servicePrice1 + servicePrice2)
+let fullprice = screenPrice + servicePrice1 + servicePrice2
