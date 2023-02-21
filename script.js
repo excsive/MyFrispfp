@@ -10,3 +10,5 @@ let fullPrice = "30000"
 console.log(fullPrice);
 let adaptive = console.log(true && false);
 console.log(fullPrice * (rollback/100))
+let str = "screens"
+console.log(str.length)
