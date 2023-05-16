@@ -1,22 +1,26 @@
-let screenPrice = prompt('Сколько будет стоить данная работа?', "12000")
-console.log(screenPrice)
-
-let servicePrice1 = prompt('Сколько это будет стоить?')
-console.log(servicePrice1)
-
-let servicePrice2 = prompt('Сколько это будет стоить?')
-console.log(servicePrice2)
-
-let fullprice = screenPrice + servicePrice1 + servicePrice2
-
-const allServicePrices = function name(price) {
-    if (price >= 30000) {
-        return "Делаем скидку в 10%"
-    }   else if (price >= 15000 && price < 30000) {
-        return "делаем скидку в 5%"
-    } else if (price >= 0 && price < 15000){
-        return "Скидка не предусмотрена"
-    }
+const getAllServicePrices = function() {
+  let sum = 0;
+  // код для подсчета суммы дополнительных услуг
+  return sum;
+    
+ function getFullPrice(screenPrice) {
+  const allServicePrices = getAllServicePrices();
+  const fullPrice = screenPrice + allServicePrices;
+  return fullPrice;
 }
 
-console.log(allServicePrices(fullprice))
+function getTitle(title) {
+  return title.trim().replace(/\b\w/g, function(l) { return l.toUpperCase(); });
+}
+    const getServicePercentPrices = function() {
+  const servicePrice = getFullPrice(screenPrice);
+  const servicePercentPrice = servicePrice - (servicePrice * (rollbackPercent / 100));
+  return servicePercentPrice;
+}
+    console.log(screens)
+    console.clear();
+showTypeOf(screenPrice);
+showTypeOf(screens);
+console.log(`Для разработки доступны экраны: ${screens}`);
+console.log(getRollbackMessage(rollbackPercent));
+console.log(`Стоимость за вычетом процента отката посреднику: ${getServicePercentPrices()}`);
