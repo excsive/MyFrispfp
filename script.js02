@@ -1,0 +1,11 @@
+function formatString(str) {
+  if (typeof str !== 'string') {
+    alert('Аргумент должен быть строкой!');
+    return;
+  }
+  str = str.trim();
+  if (str.length > 30) {
+    str = str.slice(0, 30) + '...';
+  }
+  return str;
+}
